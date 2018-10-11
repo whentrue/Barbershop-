@@ -1,0 +1,21 @@
+body {
+   background-image: url("../img/background.jpg");
+   color: aliceblue;
+}
+nav {
+    background-color: black;
+}
+
+section.news_photos {
+    color: black;
+    background-image: url("../img/news-photos.jpg");
+}
+
+section.contacts_booking {
+    color: black;
+    background-image: url("../img/news-photos.jpg");
+}
+
+footer {
+    background-image: url("../img/bottom_panel.jpg");
+}
