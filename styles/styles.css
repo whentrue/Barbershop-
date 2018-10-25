@@ -3,13 +3,32 @@
     src: url("https://fonts.gstatic.com/s/ptsansnarrow/v9/BngRUXNadjH0qYEzV7ab-oWlsbCLwR26eg.woff2");
 }
 
-
 body {
    background-image: url("../img/background.jpg");
+   background-repeat: no-repeat;
+   background-color: black;
+   /* background-blend-mode: darken; */
    color: aliceblue;
    font-family: 'PT Sans Narrow', sans-serif;
    /* margin-left: 300px ;
    margin-right: 300px ; */
+}
+
+div.container {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+
+
+main {
+    width: 940px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
 }
 
 button {
@@ -19,23 +38,267 @@ button {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    padding: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+
 }
 
 nav {
+    position: fixed;
     background-color: black;
     width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+}
+
+div.navbuttons {
+    display: inline-block;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* div.signin_icon {
+    display: inline-block;
+    padding-top: 17px;
+    opacity: 0.5;
+    margin-left: 170px;
+} */
+
+button.nav_signin_btn {
+    float: right;
+}
+img.loginpic {
+    opacity: 0.5;
+    padding-right: 5px;
+}
+
+div.logo {
+    padding-left: 280px;
+    /* margin-right: 270px; */
+    padding-top: 150px;
+    
+}
+
+div.features {
+    margin: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    text-align: center;
+    align-content: space-between;
+    
+
+}
+
+div.feature_block {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.feature_title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div.feature_pic {
+    padding: 17px;
+}
+
+div.feature_text {
+    font-size: 17px;
+    font-weight: bold;
 }
 
 section.news_photos {
     color: black;
     background-image: url("../img/news-photos.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: bold;
+    /* margin-top: 55px;
+    padding-top: 13px;
+    padding-bottom: 25px;
+    padding-left: 60px; */
+
 }
+
+div.news {
+    width: 40%;
+    padding: 15px 10px 40px 10px;
+}
+
+h3.news_photo_heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div.news_content {
+    width: 400px;
+    height: 200px;
+}
+
+p.section_text_lowercase {
+    text-transform: lowercase;
+} 
+
+button.news_btn {
+    width: 150px;
+    margin-right: 25px;
+    margin-top: 10px;
+    padding: 12px;
+}
+
+div.separator {
+    margin-top: 55px;
+}
+
+div.photos {
+    width: 40%;
+    padding: 15px 10px 40px 10px;
+
+}
+
+div.photo_content {
+    width: 400px;
+    height: 200px;
+}
+
 
 section.contacts_booking {
     color: black;
     background-image: url("../img/news-photos.jpg");
+    margin-top: 55px;
+    /* padding-top: 13px;
+    padding-left: 60px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: bold;
 }
+
+h3.contacts_heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div.contacts {
+    width: 40%;
+    padding: 15px 10px 40px 10px;
+}
+
+
+/* div.contacts_content {
+    width: 400px;
+    height: 200px;
+} */
+
+p.contacts_text {
+    line-height: 1.8;
+}
+
+
+button.contacts_btn {
+    width: 150px;
+    margin-right: 25px;
+    margin-top: 10px;
+    padding: 12px;
+}
+
+div.booking {
+    width: 40%;
+    padding: 15px 10px 40px 10px;
+}
+
+
+form.booking_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+input {
+    background: none;
+    border: 2px solid black;
+    height: 35px;
+    width: 130px;
+    padding-left: 10px;
+}
+
+button.submit_btn {
+    margin-top: 15px;
+    width: 85%;
+    height: 44.4px; 
+    /* TAKE CARE OF THIS */
+    display: block;
+}
+
 
 footer {
     background-image: url("../img/bottom_panel.jpg");
+    background-repeat: repeat;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
+div.footer_content {
+    width: 940px;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+p.footer_text {
+    width: 100%;
+    
+}
+p.madeby_text {
+    margin-right: 18px;
+}
+
+
+
+div.footer_contacts {
+    text-align: left;
+    width: 33.3%;
+
+}
+
+div.footer_social {
+    text-align: center;
+    width: 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+div.footer_madeby {
+    text-align: right;
+    width: 33.3%;
+}
+
+button.social {
+    margin: 2px;
+    margin-bottom: 25px;
+    padding: 2px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+/* div, ul, li, span, p, footer, button {
+    border: 1px solid rgb(153, 20, 20) */
